@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Itens Conferidos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Itens Conferidos - Nota: <span id="notaCarregada"></span></h1>
+  </header>
+
+  <main>
+    <section id="resultado-container">
+      <table id="resultado">
+        <thead>
+          <tr>
+            <th>LOCAL</th>
+            <th>CODIGO</th>
+            <th>MARCA</th>
+            <th>DESCRIÇÃO</th>
+            <th>QUANTIDADE</th>
+            <th>CONTAGEM</th>
+          </tr>
+        </thead>
+        <tbody id="resultado-body">
+          <tr><td colspan="6">Carregando itens...</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="voltar">
+      <button id="btnVoltar" class="btn btn-voltar">⬅ Voltar para conferência</button>
+    </section>
+  </main>
+
+  <script src="conferidos.js"></script>
+</body>
+</html>

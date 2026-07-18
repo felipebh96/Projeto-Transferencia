@@ -1,0 +1,144 @@
+/* Fundo */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top, #002A42, #00121f);
+}
+
+/* Caixa de login com efeito vidro */
+.login-container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px 30px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  width: 350px;
+  color: white;
+  text-align: center;
+}
+
+/* Título */
+.login-container h2 {
+  margin-bottom: 25px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+/* Label */
+.login-container label {
+  display: block;
+  text-align: left;
+  font-size: 14px;
+  margin: 8px 0 5px;
+}
+
+/* Inputs com ícones */
+.input-box {
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.input-box input {
+  width: 85%;
+  padding: 12px 40px 12px 15px;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.input-box input::placeholder {
+  color: #ddd;
+}
+
+.input-box i {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 18px;
+}
+
+/* Opções abaixo */
+.options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.options label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.options a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.options a:hover {
+  text-decoration: underline;
+}
+
+/* Botão */
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  background: white;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-container button:hover {
+  background: #f0f0f0;
+}
+
+/* Cadastro */
+.register {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.register a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.register a:hover {
+  text-decoration: underline;
+}
+
+.login-box {
+  width: min(92vw, 350px);
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  text-align: center; /* deixa a logo centralizada */
+}
+
+.logo {
+  margin-bottom: 15px; /* espaço entre logo e formulário */
+}
+
+.logo img {
+  max-width: 200px;   
+  height: auto;
+  display: inline-block;
+}

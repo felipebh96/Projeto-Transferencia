@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Divergências da Conferência</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Certifique-se que o arquivo div existirá com este nome: divergencias.js -->
+  <script src="divergencias.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>⚠️ Itens com Divergência</h1>
+    <p>Nota conferida: <span id="notaCarregada"></span></p>
+  </header>
+
+  <main>
+    <!-- Caixa de busca -->
+    <section class="search-box">
+      <input type="text" id="search" placeholder="Buscar código ou descrição...">
+      <button class="btn" id="btnBuscar">🔍 Buscar</button>
+    </section>
+
+    <!-- Mensagem de debug (visível quando houver algo) -->
+    <div id="debug" style="display:none; margin:10px 0; color:#b00; font-weight:600;"></div>
+
+    <!-- Tabela de resultados -->
+    <section id="resultado-container">
+      <table id="resultado">
+        <thead>
+          <tr>
+            <th>CÓDIGO</th>
+            <th>DESCRIÇÃO</th>
+            <th>LOCAL</th>
+            <th>QUANTIDADE</th>
+            <th>SEPARADO</th>
+            <th>ESTOQUE ATUAL</th>
+          </tr>
+        </thead>
+        <tbody id="resultado-body">
+          <tr><td colspan="6">Carregando divergências...</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Botão voltar -->
+    <section class="voltar" style="margin-top:12px;">
+      <button class="btn" id="btnVoltar">Voltar para Conferência</button>
+    </section>
+  </main>
+
+  <footer>
+    <p></p>
+  </footer>
+</body>
+</html>

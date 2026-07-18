@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#001d2e">
+
+  <title>Login - Conferência</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  
+  <div class="login-container">
+    <div class="logo">
+      <img src="logohs.png.png" alt="HS Auto Peças">
+    </div>
+
+    <h2></h2>
+    <form action="login.php" method="POST">
+      <label for="usuario">Usuário:</label>
+      <div class="input-box">
+        <input type="text" id="usuario" name="usuario" placeholder="usuário" required>
+        <i class='bx bx-user'></i>
+      </div>
+
+      <label for="senha">Senha:</label>
+      <div class="input-box">
+        <input type="password" id="senha" name="senha" placeholder="senha" required>
+        <i class='bx bx-lock-alt'></i>
+      </div>
+
+      <label for="nota">Número da Nota:</label>
+      <div class="input-box">
+        <input type="text" id="nota" name="nota" placeholder="número da nota" required>
+        <i class='bx bx-receipt'></i>
+      </div>
+
+      <!-- Novo campo Filial -->
+      <label for="filial">Filial:</label>
+      <div class="input-box">
+        <input type="text" id="filial" name="filial" placeholder="filial" required>
+        <i class='bx bx-building'></i>
+      </div>
+
+      <button type="submit">Entrar</button>
+    </form>
+  </div>
+</body>
+</html>

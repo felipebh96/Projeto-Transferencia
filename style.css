@@ -1,0 +1,175 @@
+/* ===============================
+   ESTILO GERAL
+================================= */
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  margin: 0;
+  background: #f4f6fa;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ===============================
+   CABEÇALHO
+================================= */
+header {
+  background: linear-gradient(90deg, #002a42, #004b6f);
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+header h1, header h2 {
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* ===============================
+   CONTEÚDO PRINCIPAL
+================================= */
+main {
+  flex: 1;
+  padding: 15px;
+}
+
+/* ===============================
+   CAIXA DE BUSCA
+================================= */
+.search-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 15px auto;
+  width: fit-content;
+}
+
+.search-box input {
+  padding: 14px 18px;
+  width: 100%;
+  max-width: 400px;
+  border: 2px solid #004b6f;
+  border-radius: 50px;
+  font-size: 1em;
+  background: #fff;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
+}
+
+.search-box input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+/* ===============================
+   BOTÕES
+================================= */
+.btn {
+  padding: 12px 22px;
+  background: linear-gradient(135deg, #004b6f, #006fa6);
+  color: #faf6f6;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 0.95em;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #00324a, #005d88);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: scale(0.97);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* ===============================
+   TABELA
+================================= */
+table {
+  width: 100%;
+  background: #fff;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  min-width: 600px;
+}
+
+th, td {
+  padding: 14px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  font-size: 0.95em;
+}
+
+th {
+  background: #002a42;
+  color: #fff;
+  white-space: nowrap;
+  letter-spacing: 0.5px;
+  font-size: 1em;
+}
+
+/* ===============================
+   CAMPO DE CONTAGEM
+================================= */
+.input-contagem {
+  width: 60px;
+  height: 36px;
+  border: 2px solid #004b6f;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.95em;
+  background: #f9f9f9;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.08);
+  transition: 0.2s ease-in-out;
+  box-sizing: border-box;
+}
+
+.input-contagem:focus {
+  outline: none;
+  border-color: #007bff;
+  background: #fff;
+  box-shadow: 0 0 6px rgba(0,123,255,0.5);
+}
+
+/* ===============================
+   RESPONSIVIDADE
+================================= */
+@media (min-width: 768px) {
+  .search-box {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .search-box input {
+    width: 280px;
+  }
+
+  .btn {
+    width: auto;
+  }
+
+  th, td {
+    font-size: 1em;
+  }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Separando Nota</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h2>Separando nota: <span id="notaCarregada"></span></h2>
+  </header>
+
+  <main>
+    <!-- Campo de validação (código de barras ou código do item) -->
+    <div class="search-box">
+      <input type="text" id="buscar" placeholder="Digite ou escaneie o código para validar o item">
+    </div>
+    
+    
+    <!-- Tabela de itens -->
+    <table id="tabela-itens">
+      <thead>
+        <tr>
+          <th>LOCAL</th>
+          <th>CÓDIGO</th>
+          <th>MARCA</th>
+          <th>DESCRIÇÃO</th>
+          <th>QUANTIDADE</th>
+          <th>SEPARADO</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="6">Carregando itens...</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Botões inferiores -->
+    <div class="boton">
+      <button class="btn" id="btnFinalizar">Finalizar Conferência</button>
+      <button class="btn" id="btnConferidos">Itens Conferidos</button>
+      <button id="btnParcial" class="btn">Finalizar Parcial</button>
+      <button id="btnNaoEncontrado" class="btn">Não Encontrei</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
